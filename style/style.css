@@ -6,20 +6,31 @@
   font-family: sans-serif;
 }
 li {
+  text-decoration: none;
   list-style: none;
 }
-.nav-bar,
+header,
 .main,
 .footer {
   background-color: #202938;
   color: white;
 }
-.nav-bar {
-  display: block;
-  padding: 5px;
-  text-decoration: none;
+header,
+.nav-list {
+  display: flex;
+  padding: 20px;
+  font-size: 20px;
+  justify-content: space-between;
+  align-items: center;
 }
-.button {
+.nav-list li a {
+  text-decoration: none;
+  color: white;
+  display: flex;
+  padding-right: 10px;
+  font-size: 18px;
+}
+button {
   background-color: #3a83f6;
   color: white;
   padding: 10px 30px;
@@ -27,7 +38,7 @@ li {
   text-decoration: none;
   display: inline-block;
   font-size: medium;
-  border-radius: 5px;
+  border-radius: 10px;
 }
 
 .content-list {
