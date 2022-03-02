@@ -4,31 +4,7 @@
   padding: opx;
   font: roboto;
   font-family: sans-serif;
-}
-li {
-  text-decoration: none;
-  list-style: none;
-}
-header,
-.main,
-.footer {
-  background-color: #202938;
-  color: white;
-}
-header,
-.nav-list {
-  display: flex;
-  padding: 20px;
-  font-size: 20px;
-  justify-content: space-between;
-  align-items: center;
-}
-.nav-list li a {
-  text-decoration: none;
-  color: white;
-  display: flex;
-  padding-right: 10px;
-  font-size: 18px;
+  box-sizing: border-box;
 }
 button {
   background-color: #3a83f6;
@@ -40,9 +16,72 @@ button {
   font-size: medium;
   border-radius: 10px;
 }
-
+header,
+footer {
+  background-color: #202938;
+  color: white;
+}
+header,
+.nav-list {
+  display: flex;
+  padding: 20px;
+  font-size: 20px;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+}
+.nav-list li a {
+  text-decoration: none;
+  color: white;
+  display: flex;
+  padding-left: 20px;
+  font-size: 18px;
+}
+header {
+  padding-left: 100px;
+  padding-right: 100px;
+}
+main h1,
+#main-p,
+.main-img {
+  background-color: #202938;
+  color: white;
+  display: flex;
+  padding-left: 100px;
+  padding-right: 100px;
+  justify-content: space-between;
+}
+.main-img {
+  display: block;
+  size: 1000px;
+}
+main h2 {
+  background-color: white;
+  display: block;
+  align-content: center;
+  text-align: center;
+  font-size: 50px;
+  color: #202938;
+  padding: 20px;
+}
+main li img {
+  color: #202938;
+  border: 2px solid #3a83f6;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 10px;
+}
+main li {
+  color: #202938;
+  display: flex;
+  justify-content: space-between;
+}
 .content-list {
   background-color: white;
+  list-style: none;
+  justify-content: space-between;
+  padding: 10px;
+  align-items: center;
 }
 .qoute,
 .author {
@@ -54,6 +93,7 @@ button {
   padding-left: 100px;
   padding-top: 150px;
   font-size: 25px;
+  font-style: italic;
   text-align: left;
   color: #2d3643;
 }
@@ -65,7 +105,21 @@ button {
   font-weight: bold;
   color: #2d3643;
 }
-.footer {
+.cta {
+  display: flex;
+  padding: 50px 100px 50px 100px;
+  margin: 100px;
+  background-color: #3a83f6;
+  color: white;
+  border-radius: 10px;
+  justify-content: space-between;
+  font-size: 20px;
+}
+.cta button {
+  display: block;
+  border: 2px solid white;
+}
+footer {
   padding: 30px;
   text-align: center;
 }
